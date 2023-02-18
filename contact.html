@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Logis Bootstrap Template - Contact</title>
+  <title>Contact</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -40,26 +40,26 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+ <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between" >
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-       <!-- <h1>Logis</h1>--->
+         <img src="assets/img/image0.png" alt=" logo"> 
+       <!-- <h1>Logis</h1>-->
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
+            <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -73,8 +73,8 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          </li>------->
+          <li><a href="contact.html">Contact</a></li>
           <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -92,7 +92,7 @@
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
               <h2>Contact</h2>
-              <!--<p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>----->
+             <!-- <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>--------------->
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@
       <div class="container" data-aos="fade-up">
 
         <div>
-          <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11619.865492996954!2d-95.46418113196603!3d30.019448220477724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640cb1052649a8b%3A0xa6624555989099b8!2s1319%20Cypress%20Creek%20Pkwy%2C%20Houston%2C%20TX%2077090!5e0!3m2!1sen!2sus!4v1676753146915!5m2!1sen!2sus" width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4 mt-4">
@@ -123,7 +123,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h4>Location:</h4>
-                <p>1319 Cypress Creek Pkwy, Houston, TX 77090</p>
+                <p>1319 Cypress Creek Pkwy,Houston, TX 77090</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -139,14 +139,14 @@
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
                 <h4>Call:</h4>
-                  <p>+1 346 561 7585</p>
+                <p>+1 346 561 7585</p>
               </div>
             </div><!-- End Info Item -->
 
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://formspree.io/f/xrgvqeaz"  method="POST" source="custom" name="form" ">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -159,14 +159,11 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" style="height:140px" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+             
+              <div class="text-center">
+                <button  class="btn btn-primary id="submit" type="submit">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -184,9 +181,19 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span>Logis</span>
+            <span>Natural Care </span>
+
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Currently we are servicing the Woodlands, Conroe, Spring, Galveston, and all surrounding Houston areas, including Austin, TX and Dallas, TX.</p>
+          <strong>
+            Important:
+            
+          </strong>
+            
+        <p>  If your pickup address is outside of our operational radius, we ask that you request your trip with a 72-hour notice.  We may accept trips on short notice depending on availability, so if you need to get somewhere today, request a trip and give us a call right away for confirmation.</p>
+          
+
+
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -207,24 +214,30 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>We Serve The Texas Triangle</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Austin, TX</a></li>
+            <li><a href="#">Conroe, TX</a></li>
+            <li><a href="#">Galveston, TX</a></li>
+            <li><a href="#">Pasadena, TX</a></li>
+            <li><a href="#">Round Rock, TX</a></li>
+             <li><a href="#">The Woodlands, TX</a></li>
+            <li><a href="#">Houston, TX</a></li>
+            <li><a href="#">Killeen, TX</a></li>
+            <li><a href="#">Pearland, TX</a></li>
+            <li><a href="#">Spring, TX</a></li>
+             <li><a href="#">Waco, TX</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
+           1319 Cypress Creek Pkwy, <br>
+            Houston, TX 77090<br>
             United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
+            <strong>Phone:</strong> +1 346 561 7585<br>
+            <strong>Email:</strong> cindy@ncmedicaltransportation.com<br>
           </p>
 
         </div>
@@ -234,14 +247,14 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>NC. Medical Transportation</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">The Robert'sLLC
       </div>
     </div>
 
