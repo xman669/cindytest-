@@ -171,6 +171,15 @@ insurance, non emergency marigoltation insurance, does insurance cover non emerg
               <div class="text-center">
                 <button  class="btn btn-primary id="submit" type="submit">Send Message</button></div>
             </form>
+            <script>
+  document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    setTimeout(function() {
+      location.reload();
+    }, 5000);
+  });
+</script>
+
           </div><!-- End Contact Form -->
 
         </div>
